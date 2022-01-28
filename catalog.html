@@ -78,8 +78,6 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-      <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
@@ -105,9 +103,10 @@
         </fieldset>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <input type="number" class="range-input" min="0">
-          <input type="number" class="range-input" min="0">
-          <input type="range" name="price-range" min="0">
+          <label for="cost-from" class="visually-hidden">от</label>
+          <input type="number" id="cost-from" class="range-input" min="0">
+          <label for="cost-to" class="visually-hidden">до</label>
+          <input type="number" id="cost-to" class="range-input" min="0">
         </fieldset>
         <button class="submit-search-button" type="submit">Применить</button>
         <button class="reset-search-button" type="reset">Сбросить</button>
@@ -121,17 +120,17 @@
       </select>
       <ul class="result-view-options">
         <li class="result-view active">
-          <button class="result-view-button">
+          <button class="result-view-button" type="button">
             <img src="" alt="Карточки" class="result-view-icon">
           </button>
         </li>
         <li class="result-view">
-          <button class="result-view-button">
+          <button class="result-view-button" type="button">
             <img src="" alt="Блок" class="result-view-icon">
           </button>
         </li>
         <li class="result-view">
-          <button class="result-view-button">
+          <button class="result-view-button" type="button">
             <img src="" alt="Список" class="result-view-icon">
           </button>
         </li>
@@ -146,11 +145,11 @@
           </div>
           <div class="hotel-card-row">
             <a href="" class="more-info">Подробнее</a>
-            <button class="favorites">Избранное</button>
+            <button class="favorites" type="button">Избранное</button>
           </div>
           <div class="hotel-card-row">
             <img src="" alt="4 звезды" class="hotel-stars">
-            <span class="rating">РЕЙТИНГ: 8,5</span>
+            <span class="rating">Рейтинг: 8,5</span>
           </div>
         </li>
         <li class="search-result-card">
@@ -162,11 +161,11 @@
           </div>
           <div class="hotel-card-row">
             <a href="" class="more-info">Подробнее</a>
-            <button class="favorites">Избранное</button>
+            <button class="favorites" type="button">Избранное</button>
           </div>
           <div class="hotel-card-row">
             <img src="" alt="3 звезды" class="hotel-stars">
-            <span class="rating">РЕЙТИНГ: 8,9</span>
+            <span class="rating">Рейтинг: 8,9</span>
           </div>
         </li>
         <li class="search-result-card">
@@ -178,11 +177,11 @@
           </div>
           <div class="hotel-card-row">
             <a href="" class="more-info">Подробнее</a>
-            <button class="favorites active">Избранное</button>
+            <button class="favorites active" type="button">Избранное</button>
           </div>
           <div class="hotel-card-row">
             <img src="" alt="2 звезды" class="hotel-stars">
-            <span class="rating">РЕЙТИНГ: 9,2</span>
+            <span class="rating">Рейтинг: 9,2</span>
           </div>
         </li>
         <li class="search-result-card">
@@ -194,15 +193,15 @@
           </div>
           <div class="hotel-card-row">
             <a href="" class="more-info">Подробнее</a>
-            <button class="favorites">Избранное</button>
+            <button class="favorites" type="button">Избранное</button>
           </div>
           <div class="hotel-card-row">
             <img src="" alt="2 звезды" class="hotel-stars">
-            <span class="rating">РЕЙТИНГ: 9,2</span>
+            <span class="rating">Рейтинг: 9,2</span>
           </div>
         </li>
       </ul>
-      <button class="load-more">ЗАГРУЗИТЬ ЕЩЕ</button>
+      <button class="load-more" type="button">Загрузить ещё</button>
       <div class="search-results-setting">
         <ul class="pagination">
           <li class="pagination-item">
@@ -238,7 +237,7 @@
       <form action="https://echo.htmlacademy.ru/" class="subscription-form" method="post">
         <label for="subscription-input" class="visually-hidden">E-mail</label>
         <input name="email" type="email" class="subscription-input" id="subscription-input" placeholder="Ваш e-mail">
-        <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+        <button class="subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
